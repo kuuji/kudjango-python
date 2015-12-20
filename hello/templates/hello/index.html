@@ -1,0 +1,9 @@
+{% if tools_list %}
+    <ul>
+    {% for tool in tools_list %}
+        <li><a target="_blank" href="{{ tool.url }}/">{{ tool.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tools are available.</p>
+{% endif %}
